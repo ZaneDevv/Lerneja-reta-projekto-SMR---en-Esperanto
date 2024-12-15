@@ -69,7 +69,7 @@ footer {
             position: relative;
             margin-left: 0;
 
-            img {
+            * {
                 margin-left: 50%;
                 transform: translateX(-50%);
             }
