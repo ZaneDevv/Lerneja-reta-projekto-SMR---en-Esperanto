@@ -1,0 +1,73 @@
+header, footer, main {
+    width: 90%;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    position: relative;
+}
+
+header {
+    > h1, > h3 {
+        width: 50%;
+    } 
+
+    > h1 {
+        font-size: 3rem;
+        margin-bottom: 0;
+    }
+
+    > h3 {
+        margin-top: 0;
+
+        font-style: italic;
+        font-weight: lighter;
+
+        color: var(--irrelevant-text-color);
+    }
+
+    > div {
+        position: absolute;
+
+        margin-left: 50%;
+        top: 0;
+
+        width: 40%;
+
+        > img {
+            height: 100%;
+        }
+    }
+}
+
+header > div {
+    height: 90%;
+    position: absolute;
+}
+
+main h2 {
+    font-size: 2rem;
+}
+
+footer {
+    > p {
+        font-size: .9rem;
+        font-weight: 400;
+
+        color: var(--irrelevant-text-color);
+    }
+}
+
+@media screen and (max-width: 655px) {
+    header {
+        > h1, > h3, > div {
+            width: 100%;
+        }
+        
+        > div {
+            top: auto;
+            position: relative;
+            margin-left: 0;
+        }
+    }
+}

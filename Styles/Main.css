@@ -1,0 +1,76 @@
+:root {
+    --background-color: #121212;
+    --text-color: #e0e0e0;
+    --irrelevant-text-color: #b9b9b9;
+    --hightlight-text-color: #8ef76f;
+    --unhightlight-text-color: #a4d895;
+}
+
+body {
+    font-family: "JetBrains Mono", monospace;
+    color: var(--text-color);
+    
+    background-color: var(--background-color);
+}
+
+
+a {
+    text-decoration: none;
+    color: #a9c6f8;
+}
+
+ul {
+    list-style: square;
+}
+
+.mark {
+    font-weight: 800;
+
+    color: var(--unhightlight-text-color);
+    animation: unhover-mark .3s;
+}
+
+.mark:hover {
+    animation: hover-mark .3s;
+    color: var(--hightlight-text-color);
+}
+
+.aside-right {
+    width: 20%;
+    max-width: 300px;
+
+    right: 0;
+
+    border-radius: 5px;
+    border: 2px solid var(--text-color)
+}
+
+.aside-left {
+    width: 20%;
+    max-width: 300px;
+
+    border-radius: 5px;
+    border: 2px solid var(--text-color)
+}
+
+::selection {
+    background-color: #08204d;
+}
+
+@keyframes hover-mark {
+    from {
+        color: var(--unhightlight-text-color);
+    }
+    to {
+        color: var(--hightlight-text-color);
+    }
+}
+
+@keyframes unhover-mark {
+    from {
+        color: var(--hightlight-text-color);
+    }
+    to {
+        color: var(--unhightlight-text-color);
+    }
+}
